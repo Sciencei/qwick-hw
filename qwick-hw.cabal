@@ -58,7 +58,7 @@ library
     import:           warnings
 
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  QwickHw
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -68,9 +68,25 @@ library
 
     -- Other library packages from which modules are imported.
     build-depends:    base ^>=4.18.2.0
+                    , containers
+                    , text
 
     -- Directories containing source files.
     hs-source-dirs:   src
 
     -- Base language which the package is written in.
     default-language: Haskell2010
+
+test-suite qwick-hw-test
+    default-language: Haskell2010
+    main-is: Main.hs
+    type: exitcode-stdio-1.0
+    hs-source-dirs: test
+    build-depends:    base ^>=4.18.2.0
+                    , containers
+                    , text
+                    , hedgehog
+                    , process
+                    , aeson
+                    , bytestring
+                    , qwick-hw

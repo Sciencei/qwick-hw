@@ -20,6 +20,7 @@
           devShell = {
             tools = hp: {
               ghcid = pkgs.ghcid;
+              node = pkgs.nodejs;
             };
             hlsCheck.enable = false;
           };
