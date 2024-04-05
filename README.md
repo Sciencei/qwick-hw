@@ -1,4 +1,4 @@
-This was a takehome assignment for an interview, with a goal of converting `old.js`, many warts and all, into a functional
+This was a takehome assignment for an interview, with a goal of converting `original-function.js`, many warts and all, into a functional
 style/language. This repo is public by request of the interviewing company.
 
 ### Usage
